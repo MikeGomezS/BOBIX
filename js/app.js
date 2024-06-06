@@ -59,6 +59,7 @@
       objectStore.createIndex("nombre", "nombre", { unique: false });
       objectStore.createIndex("numero", "numero", { unique: true });
       objectStore.createIndex("edad", "edad", { unique: false });
+      objectStore.createIndex("triage", "triage", { unique: false });
       objectStore.createIndex("estado", "estado", { unique: false });
       objectStore.createIndex("id", "id", { unique: true });
 
@@ -89,7 +90,7 @@
         //  console.log(e.target);
 
         if (cursor) {
-          const { nombre, numero, edad, estado, id } = cursor.value;
+          const { nombre, numero, edad, triage, estado, id } = cursor.value;
 
           listadoClientes.innerHTML += `
 
@@ -100,6 +101,9 @@
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 ">
                                 <p class="text-gray-700">${edad}</p>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200  leading-5 text-gray-700">    
+                                <p class="text-gray-600">${triage}</p>
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200  leading-5 text-gray-700">    
                                 <p class="text-gray-600">${estado}</p>

@@ -15,6 +15,7 @@
   const ritmoInput = document.querySelector("#ritmo");
   const temperaturaInput = document.querySelector("#temperatura");
   const cronicasInput = document.querySelector("#cronicas");
+  const triageInput = document.querySelector("#triage");
   const estadoInput = document.querySelector("#estado");
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -83,6 +84,7 @@
       ritmo,
       temperatura,
       cronicas,
+      triage,
       estado,
     } = datosCliente;
     nombreInput.value = nombre;
@@ -97,6 +99,7 @@
     ritmoInput.value = ritmo;
     temperaturaInput.value = temperatura;
     cronicasInput.value = cronicas;
+    triageInput.value = triage;
     estadoInput.value = estado;
   }
 
@@ -113,6 +116,7 @@
       malestar === "" ||
       ritmo === "" ||
       cronicas === "" ||
+      triage === "" ||
       estado === ""
     ) {
       imprimirAlerta("Todos los campos son obligatorios", "error");
@@ -133,6 +137,7 @@
       ritmo: ritmoInput.value,
       temperatura: temperaturaInput.value,
       cronicas: cronicasInput.value,
+      triage: triageInput.value,
       estado: estadoInput.value,
       id: Number(idCliente),
     };

@@ -32,13 +32,18 @@
     const nombre = document.querySelector("#nombre").value;
     const numero = document.querySelector("#numero").value;
     const edad = document.querySelector("#edad").value;
+    const sexo = document.querySelector("#sexo").value;
     const golpe = document.querySelector("#golpe").value;
     const hemorragia = document.querySelector("#hemorragia").value;
     const atrapado = document.querySelector("#atrapado").value;
     const malestar = document.querySelector("#malestar").value;
+    const adicionales = document.querySelector("#adicionales").value;
     const ritmo = document.querySelector("#ritmo").value;
+    const temperatura = document.querySelector("#temperatura").value;
     const cronicas = document.querySelector("#cronicas").value;
+    const triage = document.querySelector("#triage").value;
     const estado = document.querySelector("#estado").value;
+    
 
     if (
       nombre === "" ||
@@ -50,6 +55,7 @@
       malestar === "" ||
       ritmo === "" ||
       cronicas === "" ||
+      triage === "" ||
       estado === ""
     ) {
       return;
@@ -71,6 +77,7 @@
       ritmo,
       temperatura,
       cronicas,
+      triage,
       estado,
     };
 

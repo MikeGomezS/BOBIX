@@ -239,6 +239,30 @@
                 <div class="mb-4">
                   <label
                     class="block text-gray-700 text-sm font-bold mb-2"
+                    for="triage"
+                    >Tipo de Triage</label
+                  >
+                  <select
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="triage"
+                    name="triage"
+                  >
+                    <option>-- Tipo de Triage --</option>
+                    <option>Resucitaciòn</option>
+                    <option>Emergencia</option>
+                    <option>Urgencia</option>
+                    <option>Urgencia Media</option>
+                    <option>Sin Urgencia</option>
+                  </select>
+                </div>
+
+                <br/>
+                <legend class="block text-blue-700 text-sm font-bold mb-2">
+                  Estado del Proceso de la Persona 
+                </legend>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
                     for="estado"
                     >Estado de Emergéncia</label
                   >
@@ -247,10 +271,9 @@
                     id="estado"
                     name="estado"
                   >
-                    <option>-- Tipo de emergencia --</option>
-                    <option>Alta</option>
-                    <option>Media</option>
-                    <option>Nula</option>
+                    <option>-- Tipo de Estado --</option>
+                    <option>En Espera</option>
+                    <option>Atendido</option>
                   </select>
                 </div>
 
