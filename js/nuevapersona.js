@@ -39,11 +39,13 @@
     const malestar = document.querySelector("#malestar").value;
     const adicionales = document.querySelector("#adicionales").value;
     const ritmo = document.querySelector("#ritmo").value;
+    const presion = document.querySelector("#presion").value;
+    const oxigeno = document.querySelector("#oxigeno").value;
+    const respiratoria = document.querySelector("#respiratoria").value;
     const temperatura = document.querySelector("#temperatura").value;
     const cronicas = document.querySelector("#cronicas").value;
     const triage = document.querySelector("#triage").value;
     const estado = document.querySelector("#estado").value;
-    
 
     if (
       nombre === "" ||
@@ -54,6 +56,9 @@
       atrapado === "" ||
       malestar === "" ||
       ritmo === "" ||
+      presion === "" ||
+      oxigeno === "" ||
+      respiratoria === "" ||
       cronicas === "" ||
       triage === "" ||
       estado === ""
@@ -75,6 +80,9 @@
       malestar,
       adicionales,
       ritmo,
+      presion,
+      oxigeno,
+      respiratoria,
       temperatura,
       cronicas,
       triage,

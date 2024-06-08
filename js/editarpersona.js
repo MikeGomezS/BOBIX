@@ -13,6 +13,9 @@
   const malestarInput = document.querySelector("#malestar");
   const adicionalesInput = document.querySelector("#adicionales");
   const ritmoInput = document.querySelector("#ritmo");
+  const presionInput = document.querySelector("#presion");
+  const oxigenoInput = document.querySelector("#oxigeno");
+  const respiratoriaInput = document.querySelector("#respiratoria");
   const temperaturaInput = document.querySelector("#temperatura");
   const cronicasInput = document.querySelector("#cronicas");
   const triageInput = document.querySelector("#triage");
@@ -82,6 +85,9 @@
       malestar,
       adicionales,
       ritmo,
+      presion,
+      oxigeno,
+      respiratoria,
       temperatura,
       cronicas,
       triage,
@@ -97,6 +103,9 @@
     malestarInput.value = malestar;
     adicionalesInput.value = adicionales;
     ritmoInput.value = ritmo;
+    presionInput.value = presion;
+    oxigenoInput.value = oxigeno;
+    respiratoriaInput.value = respiratoria;
     temperaturaInput.value = temperatura;
     cronicasInput.value = cronicas;
     triageInput.value = triage;
@@ -135,6 +144,9 @@
       malestar: malestarInput.value,
       adicionales: adicionalesInput.value,
       ritmo: ritmoInput.value,
+      presion: presionInput.value,
+      oxigeno: oxigenoInput.value,
+      respiratoria: respiratoriaInput.value,
       temperatura: temperaturaInput.value,
       cronicas: cronicasInput.value,
       triage: triageInput.value,

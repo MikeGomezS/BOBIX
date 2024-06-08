@@ -87,11 +87,8 @@
         // cursor se va a ubicar en el registro indicado para accede ra los datos
         const cursor = e.target.result;
 
-        //  console.log(e.target);
-
         if (cursor) {
           const { nombre, numero, edad, triage, estado, id } = cursor.value;
-
           listadoClientes.innerHTML += `
 
                         <tr>
